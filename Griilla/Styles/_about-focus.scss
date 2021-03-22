@@ -4,7 +4,7 @@
 
 .about-focus{
     display: grid;
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
     grid-template-rows: 0.5fr 4fr 0.2fr;
 

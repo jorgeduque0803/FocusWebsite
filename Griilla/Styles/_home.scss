@@ -1,14 +1,11 @@
 .home{
     background: radial-gradient(#525252, #131313);
-    
 }
 
 .nav-container{
     background: transparent;
 }
-#IINI{
-    color: yellow;
-}
+
 
 
 
@@ -22,7 +19,7 @@
     #ogo {
         flex: 3;
     }
-
+}
 
 .showcase{
     display: grid;
@@ -44,6 +41,7 @@
         grid-row: 3/4;
         grid-column: 4/5;
     }
+
 
 
 }
