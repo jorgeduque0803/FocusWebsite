@@ -1,0 +1,65 @@
+
+.Asesoria{
+    display: grid;
+    min-height: 70vh;
+    grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+    grid-template-rows:   0.2fr 0.1fr 0.6fr 0.1fr;
+  
+    color: white;
+    h1{
+
+        font-size: 6vh;
+        grid-row: 0/4; 
+        grid-column: 2/3;
+        object-fit: cover;
+       align-self: end;
+       justify-self: start;
+       
+    }
+}
+.Servicio1{
+    border-style: solid;
+    border-color: white;
+    border: 8px;
+    grid-row: 3/4; 
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+    h1{
+    font-size: 3vh;
+    }
+    h2{
+    font-size: 2vh;
+    color: yellow;
+    }
+}
+.Servicio2{
+    grid-row: 3/4; 
+    grid-column: 3/3;
+    align-self: center;
+    justify-self: center;
+    h1{
+    font-size: 3vh;
+    
+    }
+    h2{
+    font-size: 2vh;
+    color: yellow;
+    }
+}
+.Servicio3{
+    grid-row: 3/4; 
+    grid-column: 4/4;
+    align-self: center;
+    justify-self: center;
+    h1{
+    font-size: 3vh;
+    }
+    h2{
+    font-size: 2vh;
+    color: yellow;
+    }
+}
+.TerceraSeccion{
+    background-image: url("/Images/FONDO2.png") ;
+}

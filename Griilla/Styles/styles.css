@@ -11,22 +11,17 @@ html {
 
 body {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-#IINI{
-  color: white;
-}
-#IINI:hover{
-color: #1FB14B;
-}
+
 h1 {
   font-size: 2.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
   font-size: 8rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -58,26 +53,11 @@ a {
   background: transparent;
 }
 
-.backgroundimage {
-  background-image: url(/Images/OCBF.png);
+#IINI {
+  color: yellow;
 }
 
-nav {
-  width: 80%;
-  margin: auto;
-  min-height: 10vh;
-  padding: 3rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav ul {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,29 +69,46 @@ nav ul {
           flex: 1;
   list-style: none;
 }
-nav #ogo {
+
+#ogo {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
 }
 
 .showcase {
+  display: -ms-grid;
   display: grid;
   min-height: 90vh;
-  grid-template-columns: 10% repeat(4, minmax(5rem, 1fr)) 10%;
-  grid-template-rows: 0.2fr 0.2fr 0.3fr 0.4fr;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[4] 10%;
+      grid-template-columns: 10% repeat(4, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.2fr 0.2fr 0.3fr 0.4fr;
+      grid-template-rows: 0.2fr 0.2fr 0.3fr 0.4fr;
 }
+
 .showcase .logoheader {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-column: 3/5;
   height: 60;
   -o-object-fit: cover;
      object-fit: cover;
-  align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
+
 .showcase h1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
   grid-row: 3/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
   grid-column: 4/5;
 }
 
@@ -120,32 +117,162 @@ nav #ogo {
 }
 
 .about-focus {
+  display: -ms-grid;
   display: grid;
-  min-height: 90vh;
-  grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
-  grid-template-rows: 0.5fr 4fr 0.2fr;
+  min-height: 100vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[2] 10%;
+      grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.5fr 4fr 0.2fr;
+      grid-template-rows: 0.5fr 4fr 0.2fr;
 }
+
 .about-focus h1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding-left: 150px;
 }
+
 .about-focus h2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
   padding-left: 150px;
 }
+
 .about-focus .logoheader {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
   height: 120;
   -o-object-fit: cover;
      object-fit: cover;
-  align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
+
 .about-focus .maticas {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.Asesoria {
+  display: -ms-grid;
+  display: grid;
+  min-height: 70vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
+      grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
+      grid-template-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
+  color: white;
+}
+
+.Asesoria h1 {
+  font-size: 6vh;
+  grid-row: 0/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.Servicio1 {
+  border-style: solid;
+  border-color: white;
+  border: 8px;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio1 h1 {
+  font-size: 3vh;
+}
+
+.Servicio1 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
+.Servicio2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio2 h1 {
+  font-size: 3vh;
+}
+
+.Servicio2 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
+.Servicio3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio3 h1 {
+  font-size: 3vh;
+}
+
+.Servicio3 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
+.TerceraSeccion {
+  background-image: url("/Images/FONDO2.png");
+}
+/*# sourceMappingURL=styles.css.map */
+
