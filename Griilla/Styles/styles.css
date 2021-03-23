@@ -54,7 +54,7 @@ a {
 }
 
 #IINI {
-  color: yellow;
+  color: #f1bf1b;
 }
 
 ul {
@@ -79,26 +79,65 @@ ul {
 .showcase {
   display: -ms-grid;
   display: grid;
-  min-height: 90vh;
-  -ms-grid-columns: 10% (minmax(5rem, 1fr))[4] 10%;
-      grid-template-columns: 10% repeat(4, minmax(5rem, 1fr)) 10%;
-  -ms-grid-rows: 0.2fr 0.2fr 0.3fr 0.4fr;
-      grid-template-rows: 0.2fr 0.2fr 0.3fr 0.4fr;
+  min-height: 100vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[7] 10%;
+      grid-template-columns: 10% repeat(7, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.1fr 0.2fr 0.3fr 0.2fr 0.2fr;
+      grid-template-rows: 0.1fr 0.2fr 0.3fr 0.2fr 0.2fr;
 }
 
-.showcase .logoheader {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+.showcase #MarcasCannabicas1 {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
   -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+}
+
+.showcase #MarcasCannabicas2 {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+}
+
+.showcase #MarcasCannabicas3 {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
+  -ms-grid-column: 5;
   -ms-grid-column-span: 2;
-  grid-column: 3/5;
+  grid-column: 5/7;
+}
+
+.showcase #MarcasCannabicas4 {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+}
+
+.showcase #MarcasCannabicas5 {
+  -ms-grid-row: 5;
+  grid-row: 5/5;
+  -ms-grid-column: 7;
+  grid-column: 7/7;
+}
+
+.showcase #LOGOPRINCI {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
   height: 60;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -112,6 +151,30 @@ ul {
   grid-column: 4/5;
 }
 
+.showcase .BotonContacto {
+  height: 8vh;
+  width: 25vh;
+  color: white;
+  background-color: #f1bf1b;
+  font-size: 3.5vh;
+  border-radius: 12px;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 7;
+  grid-column: 7/7;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.showcase .BotonContacto:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .about {
   background: #121212;
 }
@@ -122,8 +185,8 @@ ul {
   min-height: 100vh;
   -ms-grid-columns: 10% (minmax(5rem, 1fr))[2] 10%;
       grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
-  -ms-grid-rows: 0.5fr 4fr 0.2fr;
-      grid-template-rows: 0.5fr 4fr 0.2fr;
+  -ms-grid-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
 }
 
 .about-focus h1 {
@@ -137,16 +200,56 @@ ul {
       -ms-grid-row-align: center;
       align-self: center;
   padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
 }
 
 .about-focus h2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 1/2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   padding-left: 150px;
+  font-size: 6vh;
+  color: yellow;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.about-focus h3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.about-focus h4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
 }
 
 .about-focus .logoheader {
@@ -168,8 +271,8 @@ ul {
 
 .about-focus .maticas {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -179,8 +282,8 @@ ul {
   display: -ms-grid;
   display: grid;
   min-height: 70vh;
-  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
-      grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[6] 10%;
+      grid-template-columns: 10% repeat(6, minmax(5rem, 1fr)) 10%;
   -ms-grid-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
       grid-template-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
   color: white;
@@ -201,21 +304,22 @@ ul {
       justify-self: start;
 }
 
+#IMA1 {
+  border-radius: 20px;
+}
+
 .Servicio1 {
-  border-style: solid;
-  border-color: white;
-  border: 8px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  border-radius: 18px;
 }
 
 .Servicio1 h1 {
@@ -232,7 +336,7 @@ ul {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 3;
-  grid-column: 3/3;
+  grid-column: 3;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -254,7 +358,7 @@ ul {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 4;
-  grid-column: 4/4;
+  grid-column: 4;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -271,8 +375,73 @@ ul {
   color: yellow;
 }
 
+.Servicio4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio4 h1 {
+  font-size: 3vh;
+}
+
+.Servicio4 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
+.Servicio5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio5 h1 {
+  font-size: 3vh;
+}
+
+.Servicio5 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
+.Servicio6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Servicio6 h1 {
+  font-size: 3vh;
+}
+
+.Servicio6 h2 {
+  font-size: 2vh;
+  color: yellow;
+}
+
 .TerceraSeccion {
-  background-image: url("/Images/FONDO2.png");
+  background-image: url("https://cdn.discordapp.com/attachments/700760703903989780/823715568553033748/FONDO2.png");
 }
 /*# sourceMappingURL=styles.css.map */
-
