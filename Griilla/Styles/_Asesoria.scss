@@ -1,11 +1,15 @@
 
 .Asesoria{
     display: grid;
-    min-height: 70vh;
-    grid-template-columns: 10% repeat(6, minmax(5rem, 1fr)) 10%;
-    grid-template-rows:   0.2fr 0.1fr 0.6fr 0.1fr;
-  
+    min-height: 100vh;
+    grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+    grid-template-rows:   0.2fr 0.1fr 0.3fr 0.3fr 0.1fr;
     color: white;
+    h2:hover{
+
+        color:black;
+        background: #f1bf1b;
+    }
     h1{
 
         font-size: 6vh;
@@ -32,7 +36,7 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .Servicio2{
@@ -46,7 +50,7 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .Servicio3{
@@ -59,12 +63,12 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .Servicio4{
-    grid-row: 3/4; 
-    grid-column: 5;
+    grid-row: 4; 
+    grid-column: 2;
     align-self: center;
     justify-self: center;
     h1{
@@ -72,12 +76,12 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .Servicio5{
-    grid-row: 3/4; 
-    grid-column: 6;
+    grid-row: 4; 
+    grid-column: 3;
     align-self: center;
     justify-self: center;
     h1{
@@ -85,12 +89,12 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .Servicio6{
-    grid-row: 3/4; 
-    grid-column: 7;
+    grid-row: 4; 
+    grid-column: 4;
     align-self: center;
     justify-self: center;
     h1{
@@ -98,7 +102,7 @@
     }
     h2{
     font-size: 2vh;
-    color: yellow;
+    color: #f1bf1b;
     }
 }
 .TerceraSeccion{

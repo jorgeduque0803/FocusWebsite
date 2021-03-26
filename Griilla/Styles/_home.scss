@@ -8,6 +8,7 @@
 }
 #IINI{
     color: #f1bf1b;
+  
 }
 
 
@@ -19,10 +20,7 @@
         flex: 1;
         list-style: none;
     }
-    #ogo {
-        flex: 3;
-    }
-
+  
 
 .showcase{
     display: grid;
@@ -56,7 +54,7 @@
 
     }
     #LOGOPRINCI{
-       grid-row: 2/5; 
+       grid-row: 3/5; 
        grid-column: 4/7;
        height: 60;
        object-fit: cover;

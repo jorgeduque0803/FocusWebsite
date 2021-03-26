@@ -70,12 +70,6 @@ ul {
   list-style: none;
 }
 
-#ogo {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-}
-
 .showcase {
   display: -ms-grid;
   display: grid;
@@ -126,9 +120,9 @@ ul {
 }
 
 .showcase #LOGOPRINCI {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4/7;
@@ -213,7 +207,7 @@ ul {
   grid-column: 3/4;
   padding-left: 150px;
   font-size: 6vh;
-  color: yellow;
+  color: #f1bf1b;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -281,12 +275,17 @@ ul {
 .Asesoria {
   display: -ms-grid;
   display: grid;
-  min-height: 70vh;
-  -ms-grid-columns: 10% (minmax(5rem, 1fr))[6] 10%;
-      grid-template-columns: 10% repeat(6, minmax(5rem, 1fr)) 10%;
-  -ms-grid-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
-      grid-template-rows: 0.2fr 0.1fr 0.6fr 0.1fr;
+  min-height: 100vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
+      grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.2fr 0.1fr 0.3fr 0.3fr 0.1fr;
+      grid-template-rows: 0.2fr 0.1fr 0.3fr 0.3fr 0.1fr;
   color: white;
+}
+
+.Asesoria h2:hover {
+  color: black;
+  background: #f1bf1b;
 }
 
 .Asesoria h1 {
@@ -328,7 +327,7 @@ ul {
 
 .Servicio1 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .Servicio2 {
@@ -350,7 +349,7 @@ ul {
 
 .Servicio2 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .Servicio3 {
@@ -372,15 +371,14 @@ ul {
 
 .Servicio3 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .Servicio4 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 5;
-  grid-column: 5;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -394,15 +392,14 @@ ul {
 
 .Servicio4 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .Servicio5 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 6;
-  grid-column: 6;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -416,15 +413,14 @@ ul {
 
 .Servicio5 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .Servicio6 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 7;
-  grid-column: 7;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 4;
+  grid-column: 4;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -438,10 +434,218 @@ ul {
 
 .Servicio6 h2 {
   font-size: 2vh;
-  color: yellow;
+  color: #f1bf1b;
 }
 
 .TerceraSeccion {
   background-image: url("https://cdn.discordapp.com/attachments/700760703903989780/823715568553033748/FONDO2.png");
+}
+
+.MallaTrabajos {
+  background: #121212;
+}
+
+.MallaTrabajos {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[5] 10%;
+      grid-template-columns: 10% repeat(5, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.1fr 0.4fr 0.2fr 0.2fr 0,2fr;
+      grid-template-rows: 0.1fr 0.4fr 0.2fr 0.2fr 0,2fr;
+}
+
+.MallaTrabajos h1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-left: 15vh;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaTrabajos h2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  padding-left: 15vh;
+  font-size: 6vh;
+  color: #f1bf1b;
+  padding-top: 10vh;
+}
+
+.MallaTrabajos h3 {
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 15vh;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaTrabajos h4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 15vh;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaTrabajos .Acompana1 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/7;
+  margin: 5px 5px 5px 5px;
+}
+
+.MallaTrabajos .Acompana2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/7;
+  margin: 5px 5px 5px 5px;
+}
+
+.MallaTrabajos .Acompana3 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+  margin: 5px 5px 5px 5px;
+}
+
+.MallaTrabajos #IMA2 {
+  border-radius: 20px;
+}
+
+.MallaContacto {
+  background: #f1bf1b;
+}
+
+.MallaContacto {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[2] 10%;
+      grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
+}
+
+.MallaContacto h1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaContacto h2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  padding-left: 150px;
+  font-size: 6vh;
+  color: yellow;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.MallaContacto h3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaContacto h4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 150px;
+  color: #8a8a8a;
+  font-size: 3vh;
+}
+
+.MallaContacto .logoheader {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  height: 120;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.MallaContacto .maticas {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 /*# sourceMappingURL=styles.css.map */
