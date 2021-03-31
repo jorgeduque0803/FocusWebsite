@@ -10,11 +10,7 @@
     color: #f1bf1b;
   
 }
-
-
-
-
-    ul{
+     ul{
         display: flex;
         justify-content: space-between;
         flex: 1;
@@ -28,29 +24,61 @@
     grid-template-columns: 10% repeat(7, minmax(5rem, 1fr)) 10%;
     grid-template-rows:  0.1fr 0.2fr 0.3fr 0.2fr 0.2fr;
 
+    
+    #Burguer{
+        grid-row:1 ;
+        grid-column: 8;
+        display: flex;
+        justify-content: start;
+        .navbar-toggler{
+           height: 200%;
+        }
+        visibility: hidden;
+        @media (max-width: 992px){
+            visibility: visible;
+            }
+        }
+
+        
+    }
     #MarcasCannabicas1{
         grid-row: 5/5; 
         grid-column: 3/7;
+        @media (max-width: 1283px){
+            visibility: hidden;
+            }
 
     }
     #MarcasCannabicas2{
         grid-row: 5/5; 
         grid-column: 4/7;
+        @media (max-width: 1283px){
+            visibility: hidden;
+            }
 
     }
     #MarcasCannabicas3{
         grid-row: 5/5; 
         grid-column: 5/7;
+        @media (max-width: 1283px){
+            visibility: hidden;
+            }
 
     }
     #MarcasCannabicas4{
         grid-row: 5/5; 
         grid-column: 6/7;
+        @media (max-width: 1283px){
+            visibility: hidden;
+            }
 
     }
     #MarcasCannabicas5{
         grid-row: 5/5; 
         grid-column: 7/7;
+        @media (max-width: 1283px){
+            visibility: hidden;
+            }
 
     }
     #LOGOPRINCI{
@@ -60,7 +88,11 @@
        object-fit: cover;
        align-self: start;
        justify-self: center;
-    }
+       visibility: visible;
+    
+       }
+
+    
 
     h1{
         grid-row: 3/4;
@@ -82,5 +114,32 @@ width: 25vh;
 .BotonContacto:hover{
 
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background: red;
 }
-}
+
+
+
+
+.icon-menu:hover{
+    background-color: red;
+  }
+.icon-menu{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

@@ -6,7 +6,7 @@
     display: grid;
 
     min-height: 30vh;
-    grid-template-columns: 10% repeat(2, minmax(5rem, 1fr)) 10%;
+    grid-template-columns: 10% repeat(2, minmax(3rem, 1fr)) 10%;
     grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
 
 
