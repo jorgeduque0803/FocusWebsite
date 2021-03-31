@@ -6,7 +6,7 @@
 .MallaTrabajos{
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 10% repeat(5, minmax(3rem, 1fr)) 10%;
+    grid-template-columns: 10% repeat(6, minmax(3rem, 1fr)) 10%;
     grid-template-rows:   0.1fr 0.4fr 0.2fr 0.2fr 0,2fr;
 
 
@@ -30,38 +30,35 @@
         padding-top: 10vh;
      }
      h3{
-        grid-row: 5;
+        grid-row: 4;
         grid-column: 2/5;
         align-self: center;
         padding-left: 15vh;
         color: rgb(138, 138, 138);
         font-size: 3vh;
     }
-    h4{
-        grid-row: 4/5;
-        grid-column: 2/5;
-        align-self: center;
-        padding-left: 15vh;
-        color: rgb(138, 138, 138);
-        font-size: 3vh;
+    .BtnContacto{
+border-radius: 20%;
+grid-row:3 ;
+grid-column:6/8 ;
+
     }
     .Acompana1{
+        display: flex;
         grid-row: 5/6;
-        grid-column: 6/7;
+        justify-content: flex-end;
+        align-self: center;
+        grid-column: 2/5;
         margin: 5px 5px 5px 5px;
 
     }
     .Acompana2{
-        grid-row: 3/5;
-        grid-column: 5/7;
-        margin: 5px 5px 5px 5px;
-
-    }
-    .Acompana3{
-        grid-row: 5/6;
-        grid-column: 5/6;
-        margin: 5px 5px 5px 5px;
-
+        display: flex;
+        grid-row: 4/6;
+        grid-column: 7;
+        margin: 5px 5px 45px 5px;
+        justify-self: flex-end;
+        align-self: flex-end;
     }
     #IMA2{
     border-radius: 20px;
